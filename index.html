@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&family=Ceviche+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&family=Ceviche+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
   </head>
   <body>
     <header>
@@ -47,32 +47,31 @@
         <div class="maincolcontent">
           <div class="stickycontentrow">
             <div class="orderonlinegrid">
-              <div class="categorynavigationsection">
-                <div class="category-nav-inner-wrapper">
-                  <nav class="navbox categorymenu-styles">
-                    <ul class="navlist">
-                      <li class="navlistoptionm">
-                        <a href="#mealid">MEALS</a>
-                      </li>
-                      <li class="navlistoption">
-                        <a href="#burgerid">BURGERS</a>
-                      </li>
-                      <li class="navlistoption">
-                        <a href="#sideid">SIDES</a>
-                      </li>
-                      <li class="navlistoption">
-                        <a href="#cheesecakeid">CHESSECAKE'S</a>
-                      </li>
-                      <li class="navlistoption">
-                        <a href="#drinkid">DRINKS</a>
-                      </li>
-                      <li class="navlistoption">
-                        <a href="#sauceid">SAUCES</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
+              <div class="categorynavigationsection" id="myNavbar"> <div class="category-nav-inner-wrapper">
+        <nav class="navbox categorymenu-styles">
+            <ul class="navlist">
+                <li class="navlistoptionm">
+                    <a href="#mealid">MEALS</a>
+                </li>
+                <li class="navlistoption">
+                    <a href="#burgerid">BURGERS</a>
+                </li>
+                <li class="navlistoption">
+                    <a href="#sideid">SIDES</a>
+                </li>
+                <li class="navlistoption">
+                    <a href="#cheesecakeid">CHESSECAKE'S</a>
+                </li>
+                <li class="navlistoption">
+                    <a href="#drinkid">DRINKS</a>
+                </li>
+                <li class="navlistoption">
+                    <a href="#sauceid">SAUCES</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
 
               <div class="orderonlineproducts">
                 <div class="productssection">
@@ -758,23 +757,34 @@
       </div>
     </main>
     <!-- footer  -->
-     <footer class="footer">
-        <div class="footer-inner-container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h1>BURGER MAFIA</h1>
-                </div>
-                <div class="footer-right">
-                    <!-- Placeholder images for social media icons -->
-                    <a href="https://www.facebook.com/"><img src="img-icons/facebook.png" alt="Facebook" class="social-icon"></a>
-                    <a href="https://www.instagram.com/"><img src="img-icons/instagram.png" alt="Instagram" class="social-icon"></a>
-                </div>
-            </div>
-            <hr class="footer-line">
-            <div class="footer-bottom">
-                <p>&copy; BURGER MAFIA 2025</p>
-            </div>
+    <footer class="footer">
+      <div class="footer-inner-container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h1>BURGER MAFIA</h1>
+          </div>
+          <div class="footer-right">
+            <!-- Placeholder images for social media icons -->
+            <a href="https://www.facebook.com/"
+              ><img
+                src="img-icons/facebook.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="img-icons/instagram.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+          </div>
         </div>
+        <hr class="footer-line" />
+        <div class="footer-bottom">
+          <p>&copy; BURGER MAFIA 2025</p>
+        </div>
+      </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
