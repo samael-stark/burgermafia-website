@@ -6,7 +6,8 @@
 
 html,
 body {
-  overflow-x: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 html {
@@ -180,6 +181,7 @@ header {
   font-family: Inter;
   background-color: #fff;
   color: black;
+  overflow: hidden;
 }
 
 .navbox {
@@ -190,11 +192,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  min-width: 0;
 }
 
 .navbox::-webkit-scrollbar {
@@ -424,9 +426,8 @@ body {
     display: block;
     grid-row: auto;
     grid-column: auto;
-    /* Crucial: REMOVE position: static; here to allow JS to apply fixed position */
-    /* position: static; */ /* THIS LINE IS REMOVED */
     width: 100%;
+    overflow: hidden;
   }
 
   .category-nav-inner-wrapper {
@@ -437,6 +438,7 @@ body {
     height: 80px;
     padding: 16px 0px;
     background-color: #fff;
+    overflow: hidden;
   }
 
   .navbox {
@@ -444,6 +446,10 @@ body {
     width: 100%;
     justify-content: flex-start;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    min-width: 0;
   }
 
   .navlistoption,
@@ -543,6 +549,7 @@ body {
   .category-nav-inner-wrapper {
     padding: 8px 0px;
     height: 60px;
+    overflow: hidden;
   }
   .navlistoption,
   .navlistoptionm {
@@ -561,6 +568,10 @@ body {
   .itemphoto img {
     width: 60px;
     height: 60px;
+  }
+  .itemprice {
+    margin-top: 4px;
+    font-size: 13px;
   }
 }
 
